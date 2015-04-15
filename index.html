@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+Project:simpleplan
+File:index.html
+Date:Feb 21, 2013
+Time:2:14:21 PM
+Encoding:UTF-8
+Author:Wang.Yuzhe <yuzhewong@gmail.com>
+Version:1.00
+Description:
+-->
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta property="qc:admins" content="574132111504504166316110063757" />
+        <link rel="shortcut icon" href="./static/images/favicon.ico"/>
+        <script src="./static/js/jquery-1.9.1.min.js"></script>
+        <script src="./static/js/jquery-ui-1.10.2.custom.min.js"></script>
+        <script src="./static/js/lib.js"></script>
+        <script src="./static/js/lang.js"></script>
+        <script src="./static/js/basic.js"></script>
+        <link rel="stylesheet" href="./static/css/simple-blue/jquery-ui-1.10.2.custom.min.css" type="text/css" />
+        <link rel="stylesheet" href="./static/css/styles.css" type="text/css" />
+    </head>
+    <body>
+        <div class="HeaderMenuLineOuter">
+            <div class="HeaderMenuLine">
+                <div class="HeaderMenuLineLogo" id="logo">
+                    Simple Plan
+                </div>
+                <div class="HeaderMenuLineNav">
+                    <div id="MenuLineNavList">
+                        <span id="addPlan" class="headMenu"></span>
+                        <span id="profile" class="headMenu"></span>
+                        <span id="logOut" class="headMenu"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="logWin">
+            <p class="validateTips"></p>
+            <form>
+                <fieldset>
+                    <label for="logEmail" id="logEmailLable"></label>
+                    <input type="text" id="logEmail" class="text ui-widget-content ui-corner-all"/>
+                    <label for="logPassword" id="logPasswordLable"></label>
+                    <input type="password" id="logPassword" class="text ui-widget-content ui-corner-all"/>
+                </fieldset>
+            </form>
+        </div>
+        <div id="regWin">
+            <p class="validateTips"></p>
+            <form>
+                <fieldset>
+                    <label for="userName" id="userNameLabel"></label>
+                    <input type="text" id="userName" class="text ui-widget-content ui-corner-all"/>
+                    <label for="regEmail" id="regEmailLabel"></label>
+                    <input type="text" id="regEmail" class="text ui-widget-content ui-corner-all"/>
+                    <label for="regPassword" id="regPasswordLabel"></label>
+                    <input type="password" id="regPassword" class="text ui-widget-content ui-corner-all"/>
+                    <label for="regConfirmPassword" id="regConfirmPasswordLabel"></label>
+                    <input type="password" id="regConfirmPassword" class="text ui-widget-content ui-corner-all"/>
+                </fieldset>
+            </form>
+        </div>
+        <div id="profileWin">
+            <p class="validateTips"></p>
+            <form>
+                <fieldset>
+                    <label for="profileUserName" id="profileUserNameLabel"></label>
+                    <input type="text" id="profileUserName" class="text ui-widget-content ui-corner-all"/>
+                    <label for="profileEmail" id="profileEmailLabel"></label>
+                    <input type="text" id="profileEmail" disabled="disabled" class="text ui-widget-content ui-corner-all"/>
+                    <label for="profileMSISDN" id="profileMSISDNLabel"></label>
+                    <input type="text" id="profileMSISDN" class="text ui-widget-content ui-corner-all"/>
+                    <div class="selectable"><span id="changePasswordText"></span></div>
+                    <div id="changePassword">
+                        <label for="originalPassword" id="originalPasswordLabel"></label>
+                        <input type="password" id="originalPassword" class="text ui-widget-content ui-corner-all"/>
+                        <label for="newPassword" id="newPasswordLabel"></label>
+                        <input type="password" id="newPassword" class="text ui-widget-content ui-corner-all"/>
+                        <label for="confirmNewPassword" id="confirmNewPasswordLabel"></label>
+                        <input type="password" id="confirmNewPassword" class="text ui-widget-content ui-corner-all"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="addPlanWin">
+            <p class="validateTips"></p>
+            <form>
+                <fieldset>
+                    <label for="planTitle" id="planTitleLable"></label>
+                    <input type="text" id="planTitle" class="text ui-widget-content ui-corner-all"/>
+                    <label for="planNote" id="planNoteLable"></label>
+                    <textarea id="planNote" class="text ui-widget-content ui-corner-all" ></textarea>
+                    <label for="category" id="categoryLabel"></label>
+                    <select id="category" class="text ui-widget-content ui-corner-all" ></select>
+                    <input type="text" id="categoryValue" class="text ui-widget-content ui-corner-all"/>
+                    <button id="addCategory" type="button"></button>
+                    <button id="selectCategory" type="button"></button>
+                    <span id="advancedText"></span>
+                    <div id="advanced">
+                        <label for="eta" id="etaLable"></label>
+                        <input type="text" id="eta" class="text ui-widget-content ui-corner-all"/>
+                        <label for="orderVal" id="orderValLable"></label>
+                        <input type="text" id="orderVal" class="text ui-widget-content ui-corner-all"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="loading"></div>
+        <div id="message"></div>
+        <div id="main">
+            <div id="menu">
+                <ul>
+                    <li id="undone"></li>
+                    <li id="done"></li>
+                </ul>
+            </div>
+            <div id="content"></div>
+            <div id="pageNav"></div>
+        </div>
+        <div id="recycle"></div>
+        <div id="footer">
+            <div id="footerInner">
+                <div id="copyright"></div>
+                <div id="footerLinks"></div>
+            </div>
+        </div>
+    </body>
+</html>

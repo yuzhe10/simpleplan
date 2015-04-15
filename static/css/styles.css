@@ -1,0 +1,313 @@
+/*
+    Document   : styles
+    Created on : Feb 23, 2013, 8:55:26 PM
+    Author     : Wang Yu Zhe <yuzhewong@gmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif, 宋体;
+    font-size:12px;
+}
+*{margin:0; padding:0;}
+.HeaderMenuLineOuter{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #133783;
+    margin-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.HeaderMenuLine{
+    background-color: #133783;
+    height: 40px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #FFFFFF;
+}
+.HeaderMenuLineLogo{
+    width: 20%;
+    height: 100%;
+    padding-left: 5%;
+    line-height: 40px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: right;
+    color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+#MenuLineNavList{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#logo{
+    cursor: pointer;
+}
+.HeaderMenuLineNav{
+    width: 40%;
+    height: 100%;
+    font-size: large;
+    font-weight: bolder;
+    padding-right: 3%;
+    color: #FFFFFF;
+    float: right;
+    overflow: hidden;
+}
+
+.headMenu {
+    float: left;
+    min-width: 100px;
+    line-height: 40px;
+}
+
+.HeaderMenuLineNav .headMenu:hover{
+    background-color: #005EAC;
+}
+/*a {
+    width: 3em;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color:white;
+}
+a:hover {
+    background-color: #005EAC;
+}*/
+#HeaderDiv{
+    text-align: right;
+    padding-right: 20%;
+}
+#footer{
+    border-top: 4px double #C0C0C0;
+    background-color: #FFFFFF;
+    font-size: 11px;
+    height: 50px;
+    margin: 30px auto 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
+}
+#footerInner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#footerInner #copyright{
+    color: #1187C0;
+    float: left;
+    margin: 0;
+    padding: 5px 8px 6px 0;
+    text-align: left;
+    width: 20%;
+}
+#footerInner #footerLinks{
+    float: right;
+    padding: 5px 0 6px;
+    width: 40%;
+    font-size: medium;
+    color: #133783;
+}
+#footerLinks span {
+    cursor: pointer;
+}
+
+#logOut, #profile {
+    display: none;
+    cursor: pointer;
+}
+
+#content {
+    width: 75%;
+    float: left;
+}
+#content .group h3,#content div {
+    text-align: left;
+}
+.doneTitle {
+    text-decoration: line-through;
+    overflow:hidden;
+    zoom:1;
+}
+.undoneTitle {
+    overflow:hidden;
+    zoom:1;
+}
+.doneText,.titleRight {
+    text-decoration: none;
+    color: #cd0a0a;
+    font-size: large;
+    float: right;
+    display:inline;
+}
+.titleRight {
+    color: #FFC90E;
+}
+.tRightArea {
+    float: right;
+    width: 48%;
+}
+.tLeftArea {
+    width: 50%;
+}
+#menu {
+    width: 15%;
+    float: left;
+    padding-right: 15px;
+    display: none;
+    border: none;
+}
+#menu ul li {
+    height: 30px;
+    font-size: 25px;
+    text-align: left;
+    border-bottom: 2px;
+    border-bottom-color:#ccc;
+    border-bottom-style: dashed;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    list-style-type: none;
+}
+#menu ul li:hover {
+    background-color: #005EAC;
+    color: #fff;
+}
+
+#addPlan {
+    display: none;
+    cursor: pointer;
+}
+
+#addCategory {
+    cursor: pointer;
+}
+
+#categoryValue {
+    display: none;
+}
+
+#selectCategory {
+    display: none;
+    cursor: pointer;
+}
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.unDoneBtn,.doneBtn, .deleteBtn, .etaBtn {
+    float: right;
+}
+
+#loading {
+    background: url("../images/loading_124.gif") no-repeat scroll center center #000000;
+    display: none;
+    font-size: 14px;
+    height: 100%;
+    left: 0;
+    line-height: 20px;
+    opacity: 0.6;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.group { zoom: 1 }
+
+#recycle {
+    background-image: url("../images/recycle.png");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    bottom: 60px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+}
+
+label, input { display:block; }
+input.text,textarea.text,select.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#logWin, #regWin, #addPlanWin, #profileWin {
+    display: none;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.noteArea {
+    border: none;
+    background-color: #FFFFFF;
+    height: auto;
+    resize: none;
+    width: 98%;
+    overflow-y:hidden;
+}
+
+.updated {
+    border: 3px solid greenyellow;
+}
+
+#advancedText,#changePasswordText {
+    float: right;
+    color: #005EAC;
+    cursor: pointer;
+    font-size: medium;
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
+
+#advanced,#changePassword {
+    display: none;
+}
+
+#etaLable {
+    margin-top: 5%;
+}
+
+.priority {
+    cursor: text;
+    border: none;
+    width: 50px;
+    background: none;
+    display: inline;
+    color: #FFC90E;
+}
+
+#pageNav {
+    width: 70%;
+    float: right;
+    display: none;
+    margin-top: 10px;
+}
+
+.selectable {
+    height: 20px;
+}
+#changePasswordText {
+    padding: 0;
+}
+
+#message {
+    display: none;
+}
